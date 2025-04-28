@@ -1,3 +1,9 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"  // "kotlin-android" 대신 이것을 사용
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -21,9 +27,9 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+// 다음 두 줄은 삭제하세요 (이미 위의 plugins 블록에서 선언했기 때문)
+// apply plugin: 'com.android.application'
+// apply plugin: 'kotlin-android'
 
 android {
     namespace "com.reminder.reminder"

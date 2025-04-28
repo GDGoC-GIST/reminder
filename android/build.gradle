@@ -1,17 +1,12 @@
-buildscript {
-    ext.kotlin_version = '1.7.10'
+allprojects {
     repositories {
         google()
         mavenCentral()
     }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
 }
 
-allprojects {
+buildscript {
+    ext.kotlin_version = '1.9.22'  // settings.gradle에서 사용한 버전과 동일하게 맞춰주세요
     repositories {
         google()
         mavenCentral()

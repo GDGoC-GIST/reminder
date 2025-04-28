@@ -21,6 +21,67 @@ migrate_working_dir/
 # is commented out by default.
 #.vscode/
 
+# Flutter build and cache files
+**/android/.gradle/
+**/android/build/
+**/android/gradle/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/build/
+**/android/**/*.json
+**/android/**/*.txt
+**/android/**/generated/
+
+# Specific instant files
+hash_key.txt
+**/hash_key.txt
+**/android_gradle_build*.json
+**/*_gradle_build*.json
+**/*.bin.dill
+**/*.dill
+**/.gradle/
+**/.dart_tool/
+
+# C/C++ build files
+**/android/app/.cxx/
+**/android/app/.cxx/**/*
+**/android/**/.cxx/
+.cxx/
+**/.cxx/
+
+# Temporary files generated during build
+.temp/
+.tmp/
+**/temp/
+**/tmp/
+**/intermediates/
+**/.generated/
+
+# Instance files to ignore
+*.bin
+*.temp
+*.tmp
+*.bak
+*.backup
+*.old
+cache/
+.cache/
+
+# If you want to ignore specific json files but not all:
+# specific_config.json
+# specific_data.json
+
+# If you want to ignore all txt/json files in a specific directory:
+/path/to/instance/directory/*.txt
+/path/to/instance/directory/*.json
+
+# Ignore all JSON files except specific ones
+*.json
+!pubspec.json
+!important_config.json
+!assets/*.json
+
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
