@@ -21,6 +21,36 @@ migrate_working_dir/
 # is commented out by default.
 #.vscode/
 
+# Flutter build and cache files
+**/android/.gradle/
+**/android/build/
+**/android/gradle/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/build/
+**/android/**/*.json
+**/android/**/*.txt
+**/android/**/generated/
+
+# Specific instant files
+hash_key.txt
+**/hash_key.txt
+**/android_gradle_build*.json
+**/*_gradle_build*.json
+**/*.bin.dill
+**/*.dill
+**/.gradle/
+**/.dart_tool/
+
+# Temporary files generated during build
+.temp/
+.tmp/
+**/temp/
+**/tmp/
+**/intermediates/
+**/.generated/
+
 # Instance files to ignore
 *.bin
 *.temp
