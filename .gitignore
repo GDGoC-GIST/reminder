@@ -43,6 +43,13 @@ hash_key.txt
 **/.gradle/
 **/.dart_tool/
 
+# C/C++ build files
+**/android/app/.cxx/
+**/android/app/.cxx/**/*
+**/android/**/.cxx/
+.cxx/
+**/.cxx/
+
 # Temporary files generated during build
 .temp/
 .tmp/
