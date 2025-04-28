@@ -1,0 +1,2 @@
+C:/Users/ADMIN/Desktop/Dev/GDGoC/reminder/android/app/.cxx/Debug/95w614w5/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/ADMIN/Desktop/Dev/GDGoC/reminder/android/app/.cxx/Debug/95w614w5/x86_64/CMakeFiles/rebuild_cache.dir
