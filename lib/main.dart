@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:timezone/data/latest_all.dart' as tz;
+import 'package:timezone/timezone.dart' as tz;
+import 'package:reminder/domain/entities/notification.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await NotificationsService().initNotification();
+  tz.initializeTimeZones();
+  tz.setLocalLocation(tz.getLocation('Asia/Seoul'));
   runApp(const MyApp());
 }
 
@@ -116,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {NotificationsService().showNotifications(title: "hello", body: "world");},
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
