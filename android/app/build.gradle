@@ -74,5 +74,6 @@ flutter {
 }
 
 dependencies {
+    implementation 'io.flutter:flutter_embedding_debug:1.0.0-e25787fa5758e5a73eed49e5ec3f44d2811f13f3'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
